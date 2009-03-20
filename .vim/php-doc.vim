@@ -72,7 +72,7 @@ let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = "zLib"
 let g:pdv_cfg_Version = "SVN: $Id$"
 let g:pdv_cfg_Author = "Jakub Zalas <jakub@zalas.pl>"
-let g:pdv_cfg_Copyright = "Copyright (C) 2008 Jakub Zalas. All rights reserved."
+let g:pdv_cfg_Copyright = "Copyright (C) 2009 Jakub Zalas. All rights reserved."
 let g:pdv_cfg_License = "Look for LICENCE file."
 
 " TOB: let g:pdv_cfg_Type = "mixed"

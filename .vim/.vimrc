@@ -1,8 +1,9 @@
 
 " {{{  Command mapping
 
-map <F5> :setlocal spell! spelllang=en_us<cr>
-noremap <silent> <F11> :cal VimCommanderToggle()<CR>
+" map <F5> :setlocal spell! spelllang=en_us<cr>
+noremap <silent> <F7> :cal VimCommanderToggle()<CR>
+nmap <silent> <F11> :NERDTreeToggle<CR>
 
 "copy the current visual selection to ~/.vbuf 
 vmap <F4> :w! ~/.vbuf<CR> 
@@ -70,10 +71,10 @@ set backspace=start,eol,indent
 set modeline
 
 " MovingThroughCamelCaseWords
-nnoremap <silent><C-Left>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
-nnoremap <silent><C-Right> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
-inoremap <silent><C-Left>  <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
-inoremap <silent><C-Right> <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
+nnoremap <silent><C-h>  :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
+nnoremap <silent><C-l> :<C-u>cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
+inoremap <silent><C-h>  <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%^','bW')<CR>
+inoremap <silent><C-l> <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!\)\<Bar>\%$','W')<CR>
 
 " Highlight current line in insert mode.
 autocmd InsertLeave * se nocul
