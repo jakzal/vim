@@ -5,6 +5,9 @@
 noremap <silent> <F7> :cal VimCommanderToggle()<CR>
 nmap <silent> <F11> :NERDTreeToggle<CR>
 
+nmap <silent> <C-j> :tabprevious<CR>
+nmap <silent> <C-k> :tabnext<CR>
+
 "copy the current visual selection to ~/.vbuf 
 vmap <F4> :w! ~/.vbuf<CR> 
 "copy the current line to the buffer file if no visual selection 
@@ -81,4 +84,6 @@ autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
 
 " }}}
+
+" source ~/.vimlocalrc
 
