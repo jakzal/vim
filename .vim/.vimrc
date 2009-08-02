@@ -85,5 +85,13 @@ autocmd InsertEnter * se cul
 
 " }}}
 
+" {{{ snipMate
+
+let g:snips_author = 'Jakub Zalas <jakub@zalas.pl>'
+let g:snips_package = 'zLib'
+let g:snips_subpackage = 'lib'
+
+" }}}"
+
 " source ~/.vimlocalrc
 
