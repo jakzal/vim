@@ -15,6 +15,9 @@ nmap <F4> :.w! ~/.vbuf<CR>
 "paste the contents of the buffer file 
 nmap <F5> :r ~/.vbuf<CR>
 
+":command -range -nargs=* RunSQL :<line1>,<line2>w !psql -U user dbname | less
+:command -range -nargs=* RunSQL :<line1>,<line2>w !mysql -u kuba -preksio pasart | less
+
 " }}}
 
 " {{{  Read skeleton files
