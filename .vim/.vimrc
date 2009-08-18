@@ -96,5 +96,5 @@ let g:snips_subpackage = 'lib'
 
 " }}}"
 
-" source ~/.vimlocalrc
+source ~/.vimlocalrc
 
