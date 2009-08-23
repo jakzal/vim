@@ -86,6 +86,9 @@ inoremap <silent><C-l> <C-o>:cal search('\<\<Bar>\U\@<=\u\<Bar>\u\ze\%(\U\&\>\@!
 autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
 
+" Set status line
+set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+
 " }}}
 
 " {{{ snipMate
