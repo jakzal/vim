@@ -93,6 +93,12 @@ set wildmenu
 
 " }}}
 
+" {{{ File types
+
+au BufNewFile,BufRead *.txt setf textile  
+
+" }}}"
+
 " {{{ snipMate
 
 let g:snips_author = 'Jakub Zalas <jakub@zalas.pl>'
