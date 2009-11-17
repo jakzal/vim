@@ -27,6 +27,7 @@ nmap <F5> :r ~/.vbuf<CR>
 " the cursor to the middle of the file.
 autocmd BufNewFile [^.]\+.php 0r ~/.vim/skeleton.php | normal Gdd^[OA^[OA
 autocmd BufNewFile *.class.php 0r ~/.vim/skeleton.class.php | normal Gdd^[OA^[OA
+autocmd BufNewFile [^.]\+.sh 0r ~/.vim/skeleton.sh | normal Gdd^[OA^[OA
 
 " }}}
 
