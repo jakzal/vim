@@ -97,6 +97,7 @@ set wildmenu
 " {{{ File types
 
 au BufNewFile,BufRead *.txt setf textile  
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/ftplugin/yaml.vim
 
 " }}}"
 

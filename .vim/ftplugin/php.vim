@@ -117,20 +117,20 @@ setlocal complete-=k complete+=k
 
 " This function determines, wether we are on the start of the line text (then tab indents) or
 " if we want to try autocompletion
-func! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
+" func! InsertTabWrapper()
+"     let col = col('.') - 1
+"     if !col || getline('.')[col - 1] !~ '\k'
+"         return "\<tab>"
+"     else
+"         return "\<c-p>"
+"     endif
+" endfunction
 
 " Remap the tab key to select action with InsertTabWrapper
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " }}}
-"
+
 " {{{  Autocompletion using SPACE key
 
 inoremap <c><space> <c-x><c-o><cr>
