@@ -302,3 +302,14 @@ snippet li
 snippet var
 	/* @var $${2:$1} ${1:myClass} */
 	$$2->${3}
+snippet try
+	try
+	{
+		${3}
+	}
+	catch (${1}Exception $exception)
+	{
+		${2}
+	}
+snippet sfc
+	sfConfig::get('${1}', ${2})${3}
